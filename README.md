@@ -1,3 +1,5 @@
+![Containerizing a node application](src/public/docker.png)
+
 # Containerize a Node Application
 
 Docker is a open source platform for developing, shipping and running applications. Here, I am going to containerize a simple **Node.js** application.
@@ -185,4 +187,3 @@ If you get the output like below in your terminal, that means your container is 
 **Step-02:** Check Your Container is Working Okay Using Browser
 
 Go to your favorite browser & search for **http://127.0.0.1:8000/api/v1/users** to see the output.
-
