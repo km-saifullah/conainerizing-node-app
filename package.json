@@ -1,0 +1,30 @@
+{
+  "name": "container-node-app",
+  "version": "1.0.0",
+  "main": "./src/server.js",
+  "type": "module",
+  "scripts": {
+    "start": "node ./src/server.js",
+    "dev": "node --watch ./src/server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/km-saifullah/container-node-app.git"
+  },
+  "keywords": [
+    "docker",
+    "containerization",
+    "express",
+    "nodejs"
+  ],
+  "author": "Khaled Md Saifullah",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/km-saifullah/container-node-app/issues"
+  },
+  "homepage": "https://github.com/km-saifullah/container-node-app#readme",
+  "description": "",
+  "dependencies": {
+    "express": "^4.21.0"
+  }
+}
