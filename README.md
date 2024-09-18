@@ -6,7 +6,7 @@ Docker is a open source platform for developing, shipping and running applicatio
 ![Node.js](https://img.shields.io/badge/Node.js-339933?logo=nodedotjs&logoColor=white)
 ![Express](https://img.shields.io/badge/Express-000000?logo=express&logoColor=white)
 
-## Create a Node.js Applicaiton
+## Create Your Node.js Applicaiton
 
 **Step-01:** Create a New Node.js Applicaiton
 
@@ -125,7 +125,9 @@ export default router;
 npm install express
 ```
 
-**Step-05:** Prepare **Dockerfile** to Create Docker Image
+## Containerize Your Node.js Applicaiton
+
+**Step-01:** Prepare **Dockerfile** to Create Docker Image
 
 ```bash
 FROM node:22-alpine
@@ -137,7 +139,7 @@ EXPOSE 8000
 CMD [ "npm", "start" ]
 ```
 
-**Step-06:** Prepare **.dockerignore** File
+**Step-02:** Prepare **.dockerignore** File
 
 ```bash
 node_modules
@@ -146,19 +148,21 @@ node_modules
 Dockerfile
 ```
 
-**Step-07:** Build a Docker Image for Your Node Application
+**Step-03:** Build a Docker Image for Your Node Application
 
 ```bash
 docker build -t your-image-name .
 ```
 
-**Step-08:** Run the Container Based on Your Image
+**Step-04:** Run the Container Based on Your Image
 
 ```bash
 docker run -d -p 8000:8000 --name your-container-name your-image-name
 ```
 
-**Step-09:** Check Your Container is Working Okay
+## Test Your Container
+
+**Step-01:** Check Your Container is Working Okay
 
 ```bash
 curl 127.0.0.1:8000/api/v1/users
@@ -178,6 +182,7 @@ If you get the output like below in your terminal, that means your container is 
 }
 ```
 
-**Step-10:** Check Your Container is Working Okay Using Browser
+**Step-02:** Check Your Container is Working Okay Using Browser
 
 Go to your favorite browser & search for **http://127.0.0.1:8000/api/v1/users** to see the output.
+
